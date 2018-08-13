@@ -14,9 +14,9 @@
 
 #include "xxx_cdev.h"
 
-#define DBG(fmt, args...) printk(KERN_DEBUG "[%s#%d] " fmt "\n", __FUNCTION__, __LINE__, ##args)
-#define PRT(fmt, args...) printk(KERN_INFO "[%s#%d] " fmt "\n", __FUNCTION__, __LINE__, ##args)
-#define ERR(fmt, args...) do { printk(KERN_ERR "[%s#%d] " fmt "\n", __FUNCTION__, __LINE__, ##args); } while (0)
+#define DBG(fmt, args...) printk(KERN_DEBUG XXX_MOD_NAME ": [%s#%d] " fmt "\n", __FUNCTION__, __LINE__, ##args)
+#define PRT(fmt, args...) printk(KERN_INFO XXX_MOD_NAME ": [%s#%d] " fmt "\n", __FUNCTION__, __LINE__, ##args)
+#define ERR(fmt, args...) do { printk(KERN_ERR XXX_MOD_NAME ":[%s#%d] " fmt "\n", __FUNCTION__, __LINE__, ##args); } while (0)
 
 struct xxx_cdev_entry
 {
